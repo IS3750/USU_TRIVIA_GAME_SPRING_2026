@@ -1,4 +1,4 @@
-christianFunction = (points) => {
+round1 = (points) => {
   let question = prompt(
     "What is the abreviation of Utah State University",
   ).toLowerCase();
