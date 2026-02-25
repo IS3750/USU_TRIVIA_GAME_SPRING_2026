@@ -18,3 +18,5 @@ round1 = (points) => {
 
   return points;
 };
+
+export { round1 };
