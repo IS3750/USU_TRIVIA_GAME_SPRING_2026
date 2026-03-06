@@ -5,3 +5,11 @@
 // 4) Otherwise, return the original score
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.)
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
+export function round4(points) {
+  const answer = prompt("What is the mascot of Utah State University?");
+  if (answer && answer.toLowerCase() === "aggies") {
+    const earnedPoints = 10; // points you want to give
+    return points + earnedPoints;
+  }
+  return points;
+}
