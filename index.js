@@ -11,9 +11,61 @@ export const round3 = (points) => {
     // 4) Otherwise, return the original score
     if (trivQuest === "beno club"){
         alert(`Correct! Your original score was ${points}, and you earned 100 points. Your score is now: ${Number((points+100))}`);
+      points+=100;
     }else if (trivQuest !== "beno club"){
         alert(`Unfortunately, that is incorrect. The answer was "Beno Club". Your score is: ${Number(points)}`);
     }else{
         alert("Okay, something is definitely wrong with the code.");
     };
+  return points;
 };
+// If you need more guidence, feel free to check index.html to see the main flow of the program.
+
+// Tanner - Round 5
+export function round5(points) {
+    // USU Trivia Question
+    const answer = prompt("What is was the name of USU when it first opened in 1888?").toLowerCase();
+    // Checks if the answer is correct
+    if (answer === "agricultural college of utah") {
+        alert("Correct! You earn 10 points.");
+        return points + 10; 
+    } else {
+        alert("Incorrect. The correct answer is 'Agricultural College of Utah'.");
+        return points; 
+    }
+}
+// programmed by Christian Sperry
+round1 = (points) => {
+  let question = prompt(
+    "What is the abreviation of Utah State University",
+  ).toLowerCase();
+
+  if (question === "usu") {
+    points += 10;
+  }
+
+  return points;
+};
+
+export { round1 };
+export function round4(points) {
+  const answer = prompt("What is the mascot of Utah State University?");
+  if (answer && answer.toLowerCase() === "aggies") {
+    const earnedPoints = 10; // points you want to give
+    return points + earnedPoints;
+  }
+  return points;
+}
+export function round2 (points) {
+  const answer = prompt(
+    "What is the mascot of Utah State University?"
+  );
+
+  if (answer && answer.toLowerCase() === "Big Blue") {
+    alert("Correct!");
+    return points + 5;
+  } else {
+    alert("Incorrect. The answer is Big Blue.");
+    return points;
+  }
+}
