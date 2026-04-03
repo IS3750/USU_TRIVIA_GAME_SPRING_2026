@@ -5,6 +5,21 @@
 // 4) Otherwise, return the original score
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.)
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
+
+// programmed by Christian Sperry
+round1 = (points) => {
+  let question = prompt(
+    "What is the abreviation of Utah State University",
+  ).toLowerCase();
+
+  if (question === "usu") {
+    points += 10;
+  }
+
+  return points;
+};
+
+export { round1 };
 export function round4(points) {
   const answer = prompt("What is the mascot of Utah State University?");
   if (answer && answer.toLowerCase() === "aggies") {
