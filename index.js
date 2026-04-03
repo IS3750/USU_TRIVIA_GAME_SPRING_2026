@@ -19,3 +19,38 @@ export function round5(points) {
         return points; 
     }
 }
+// programmed by Christian Sperry
+round1 = (points) => {
+  let question = prompt(
+    "What is the abreviation of Utah State University",
+  ).toLowerCase();
+
+  if (question === "usu") {
+    points += 10;
+  }
+
+  return points;
+};
+
+export { round1 };
+export function round4(points) {
+  const answer = prompt("What is the mascot of Utah State University?");
+  if (answer && answer.toLowerCase() === "aggies") {
+    const earnedPoints = 10; // points you want to give
+    return points + earnedPoints;
+  }
+  return points;
+}
+export function round2 (points) {
+  const answer = prompt(
+    "What is the mascot of Utah State University?"
+  );
+
+  if (answer && answer.toLowerCase() === "Big Blue") {
+    alert("Correct!");
+    return points + 5;
+  } else {
+    alert("Incorrect. The answer is Big Blue.");
+    return points;
+  }
+}
