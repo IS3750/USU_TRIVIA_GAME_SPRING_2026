@@ -35,7 +35,7 @@ export function round5(points) {
     }
 }
 // programmed by Christian Sperry
-round1 = (points) => {
+const round1 = (points) => {
   let question = prompt(
     "What is the abreviation of Utah State University",
   ).toLowerCase();
